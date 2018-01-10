@@ -1,20 +1,38 @@
-<!doctype html>
+<!DOCTYPE html>
 
 
 
   
 
 
-<html class="theme-next pisces use-motion">
+<html class="theme-next gemini use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
 
 
 
 <meta http-equiv="Cache-Control" content="no-transform" />
 <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
 
 
 
@@ -36,32 +54,6 @@
 
 
 
-  
-  
-  
-  
-
-  
-    
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-    
-    
-    <link href="https://fonts.cat.net/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  
-
-
-
 
 
 
@@ -69,21 +61,31 @@
 
 <link href="//cdn.bootcss.com/font-awesome/4.6.2/css/font-awesome.css" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="java" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="doublekill.me" />
 
 
 
 
 
   <link rel="alternate" href="/atom.xml" title="DOUBLE'KILL" type="application/atom+xml" />
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.2" />
 
 
 
@@ -103,32 +105,42 @@
 
 
 
-<script type="text/javascript" id="hexo.configuration">
+<script type="text/javascript" id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
-    scheme: 'Pisces',
-    sidebar: {"position":"left","display":"always"},
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":true},
     fancybox: true,
-    motion: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     duoshuo: {
       userId: '6343051790631568000',
       author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     }
   };
 </script>
 
 
 
-
   <link rel="canonical" href="http://doublekill.me/"/>
 
 
-  <title> DOUBLE'KILL </title>
-</head>
 
-<body itemscope itemtype="//schema.org/WebPage" lang="zh-Hans">
 
+
+  <title>DOUBLE'KILL - 程序员</title>
   
+
+
 
 
 
@@ -145,41 +157,43 @@
 
 
 
+</head>
 
-
-
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
   
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
-  
+  <div class="container sidebar-position-left 
+  page-home">
     <div class="headband"></div>
 
-    <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
-      <div class="header-inner"><div class="site-meta ">
-  
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
 
-  <div class="custom-logo-site-title">
-    <a href="/"  class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <span class="site-title">DOUBLE'KILL</span>
-      <span class="logo-line-after"><i></i></span>
-    </a>
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">DOUBLE'KILL</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">程序员</p>
+      
   </div>
-  <p class="site-subtitle">程序员</p>
-</div>
 
-<div class="site-nav-toggle">
-  <button>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-  </button>
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
 </div>
 
 <nav class="site-nav">
@@ -199,8 +213,18 @@
         </li>
       
         
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-categories">
-          <a href="/categories" rel="section">
+          <a href="/categories/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
@@ -210,21 +234,11 @@
       
         
         <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
+          <a href="/archives/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
             归档
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            标签
           </a>
         </li>
       
@@ -247,17 +261,32 @@
   
     <div class="site-search">
       
-  <div class="popup">
- <span class="search-icon fa fa-search"></span>
- <input type="text" id="local-search-input">
- <div id="local-search-result"></div>
- <span class="popup-btn-close">close</span>
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
 </div>
+
 
 
     </div>
   
-</nav> </div>
+</nav>
+
+
+
+ </div>
     </header>
 
     <main id="main" class="main">
@@ -270,13 +299,27 @@
       
 
   
-  
 
   
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://doublekill.me/2018/01/10/自定义JsonMessageConverter使后台实现Jsonp功能/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="tyzhz">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://ogh0ft7cp.bkt.clouddn.com/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="DOUBLE'KILL">
+    </span>
 
     
       <header class="post-header">
@@ -284,38 +327,42 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/2018/01/10/自定义JsonMessageConverter使后台实现Jsonp功能/" itemprop="url">
-                  自定义JsonMessageConverter使后台实现Jsonp功能
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2018/01/10/自定义JsonMessageConverter使后台实现Jsonp功能/" itemprop="url">自定义JsonMessageConverter使后台实现Jsonp功能</a></h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2018-01-10T10:57:59+08:00" content="2018-01-10">
-              2018-01-10
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-10T10:57:59+08:00">
+                2018-01-10
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/java/" itemprop="url" rel="index">
                     <span itemprop="name">java</span>
                   </a>
@@ -323,33 +370,61 @@
 
                 
                 
-
               
             </span>
           
 
           
             
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2018/01/10/自定义JsonMessageConverter使后台实现Jsonp功能/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2018/01/10/自定义JsonMessageConverter使后台实现Jsonp功能/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
           
 
           
           
 
           
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  
+                </span>
+              
+            </div>
+          
+
+          
+
         </div>
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -358,24 +433,29 @@
       
         
           <h3 id="Jsonp需要返回什么格式的数据"><a href="#Jsonp需要返回什么格式的数据" class="headerlink" title="Jsonp需要返回什么格式的数据"></a>Jsonp需要返回什么格式的数据</h3><p>当前端需要跨域调用后台数据的时候，除了在后台配置Access-Control-Allow-Origin，还可以用jsonp实现<br>使用jsonp方式调用后台时，后台会接受一个callback参数，然后返回的时候，只需将返回的结果和callback组装成一个函数调用就可以了<br>例如：<br><code>callback(resultJson)</code><br>
-          <div class="post-more-link text-center">
+          <!--noindex-->
+          <div class="post-button text-center">
             <a class="btn" href="/2018/01/10/自定义JsonMessageConverter使后台实现Jsonp功能/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
+          <!--/noindex-->
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
+
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -385,6 +465,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -392,13 +476,27 @@
       
 
   
-  
 
   
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://doublekill.me/2018/01/10/封装request-response使之可以全局访问/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="tyzhz">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://ogh0ft7cp.bkt.clouddn.com/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="DOUBLE'KILL">
+    </span>
 
     
       <header class="post-header">
@@ -406,38 +504,42 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/2018/01/10/封装request-response使之可以全局访问/" itemprop="url">
-                  封装request,response使之可以全局访问
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2018/01/10/封装request-response使之可以全局访问/" itemprop="url">封装request,response使之可以全局访问</a></h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2018-01-10T10:15:48+08:00" content="2018-01-10">
-              2018-01-10
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-10T10:15:48+08:00">
+                2018-01-10
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/java/" itemprop="url" rel="index">
                     <span itemprop="name">java</span>
                   </a>
@@ -445,33 +547,61 @@
 
                 
                 
-
               
             </span>
           
 
           
             
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2018/01/10/封装request-response使之可以全局访问/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2018/01/10/封装request-response使之可以全局访问/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
           
 
           
           
 
           
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  
+                </span>
+              
+            </div>
+          
+
+          
+
         </div>
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -480,24 +610,29 @@
       
         
           <h2 id="1-封装request，response为RequestContext"><a href="#1-封装request，response为RequestContext" class="headerlink" title="1. 封装request，response为RequestContext"></a>1. 封装request，response为RequestContext</h2><p>服务器收到一个http请求，会对每个请求创建一个HttpServletRequest和HttpServletResponse，HttpServletRequest封装请求信息，HttpServletResponse封装响应信息。<br>每个请求都是独立的线程，这里我们使用ThreadLocal来保存request，和response，ThreadLocal会使每个线程数据相互隔离。<br>
-          <div class="post-more-link text-center">
+          <!--noindex-->
+          <div class="post-button text-center">
             <a class="btn" href="/2018/01/10/封装request-response使之可以全局访问/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
+          <!--/noindex-->
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
+
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -507,6 +642,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -514,13 +653,27 @@
       
 
   
-  
 
   
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://doublekill.me/2018/01/09/MySQL数据去重/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="tyzhz">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://ogh0ft7cp.bkt.clouddn.com/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="DOUBLE'KILL">
+    </span>
 
     
       <header class="post-header">
@@ -528,38 +681,42 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/2018/01/09/MySQL数据去重/" itemprop="url">
-                  MySQL数据去重
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2018/01/09/MySQL数据去重/" itemprop="url">MySQL数据去重</a></h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2018-01-09T10:00:08+08:00" content="2018-01-09">
-              2018-01-09
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-09T10:00:08+08:00">
+                2018-01-09
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/mysql/" itemprop="url" rel="index">
                     <span itemprop="name">mysql</span>
                   </a>
@@ -567,33 +724,61 @@
 
                 
                 
-
               
             </span>
           
 
           
             
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2018/01/09/MySQL数据去重/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2018/01/09/MySQL数据去重/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
           
 
           
           
 
           
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  
+                </span>
+              
+            </div>
+          
+
+          
+
         </div>
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -609,16 +794,19 @@
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
+
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -628,6 +816,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -635,13 +827,27 @@
       
 
   
-  
 
   
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://doublekill.me/2017/12/13/springboot+angular5整合/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="tyzhz">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://ogh0ft7cp.bkt.clouddn.com/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="DOUBLE'KILL">
+    </span>
 
     
       <header class="post-header">
@@ -649,38 +855,42 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/2017/12/13/springboot+angular5整合/" itemprop="url">
-                  springboot+angular5整合
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2017/12/13/springboot+angular5整合/" itemprop="url">springboot+angular5整合</a></h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2017-12-13T10:00:08+08:00" content="2017-12-13">
-              2017-12-13
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-13T10:00:08+08:00">
+                2017-12-13
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/angular/" itemprop="url" rel="index">
                     <span itemprop="name">angular</span>
                   </a>
@@ -688,33 +898,61 @@
 
                 
                 
-
               
             </span>
           
 
           
             
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2017/12/13/springboot+angular5整合/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/12/13/springboot+angular5整合/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
           
 
           
           
 
           
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  
+                </span>
+              
+            </div>
+          
+
+          
+
         </div>
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -724,24 +962,29 @@
         
           <h2 id="创建项目"><a href="#创建项目" class="headerlink" title="创建项目"></a>创建项目</h2><p>1.首先创建一个springboot项目<br>2.然后在main目录下使用angular cli创建angular项目，<br><code>ng new ngapp</code></p>
 <h2 id="修改配置"><a href="#修改配置" class="headerlink" title="修改配置"></a>修改配置</h2><p>3.修改angular的打包目录<br>在.angular-cli.json文件中的outDir修改为”../resources/static”,<br>这里static属于springboot的默认静态目录，也可以修改为”../resources/public” 或者如果是普通的maven项目，直接修改为”../webapp”<br>
-          <div class="post-more-link text-center">
+          <!--noindex-->
+          <div class="post-button text-center">
             <a class="btn" href="/2017/12/13/springboot+angular5整合/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
+          <!--/noindex-->
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
+
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -751,6 +994,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -758,13 +1005,27 @@
       
 
   
-  
 
   
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://doublekill.me/2017/05/10/尾递归/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="tyzhz">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://ogh0ft7cp.bkt.clouddn.com/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="DOUBLE'KILL">
+    </span>
 
     
       <header class="post-header">
@@ -772,38 +1033,42 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/2017/05/10/尾递归/" itemprop="url">
-                  尾递归
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2017/05/10/尾递归/" itemprop="url">尾递归</a></h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2017-05-10T11:26:00+08:00" content="2017-05-10">
-              2017-05-10
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-10T11:26:00+08:00">
+                2017-05-10
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/算法/" itemprop="url" rel="index">
                     <span itemprop="name">算法</span>
                   </a>
@@ -811,33 +1076,61 @@
 
                 
                 
-
               
             </span>
           
 
           
             
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2017/05/10/尾递归/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/05/10/尾递归/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
           
 
           
           
 
           
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  
+                </span>
+              
+            </div>
+          
+
+          
+
         </div>
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -846,24 +1139,29 @@
       
         
           <h2 id="递归"><a href="#递归" class="headerlink" title="递归"></a>递归</h2><p>在数学与计算机科学中，是指在函数的定义中使用函数自身的方法。<br>例如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">//计算num+(num-1)+(num-2)+...</span><br><span class="line">public int decrease(int num)</span><br><span class="line">&#123;</span><br><span class="line">    if (num == 0)</span><br><span class="line">    &#123;</span><br><span class="line">        return 0;</span><br><span class="line">    &#125;</span><br><span class="line">    return decrease(num - 1) + num;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-          <div class="post-more-link text-center">
+          <!--noindex-->
+          <div class="post-button text-center">
             <a class="btn" href="/2017/05/10/尾递归/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
+          <!--/noindex-->
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
+
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -873,6 +1171,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -880,13 +1182,27 @@
       
 
   
-  
 
   
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://doublekill.me/2017/02/22/java-util-Arrays-asList方法的小细节/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="tyzhz">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://ogh0ft7cp.bkt.clouddn.com/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="DOUBLE'KILL">
+    </span>
 
     
       <header class="post-header">
@@ -894,38 +1210,42 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/2017/02/22/java-util-Arrays-asList方法的小细节/" itemprop="url">
-                  java.util.Arrays.asList方法的小细节
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2017/02/22/java-util-Arrays-asList方法的小细节/" itemprop="url">java.util.Arrays.asList方法的小细节</a></h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2017-02-22T09:31:05+08:00" content="2017-02-22">
-              2017-02-22
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-02-22T09:31:05+08:00">
+                2017-02-22
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/java/" itemprop="url" rel="index">
                     <span itemprop="name">java</span>
                   </a>
@@ -933,33 +1253,61 @@
 
                 
                 
-
               
             </span>
           
 
           
             
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2017/02/22/java-util-Arrays-asList方法的小细节/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/02/22/java-util-Arrays-asList方法的小细节/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
           
 
           
           
 
           
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  
+                </span>
+              
+            </div>
+          
+
+          
+
         </div>
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -968,24 +1316,29 @@
       
         
           <h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>先看这段代码,使用Arrays.asList返回一个List,然后在list中增加一个对象，抛出java.lang.UnsupportedOperationException，意思是不支持这个操作。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">List&lt;String&gt; list = Arrays.asList(&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;d&quot;,&quot;e&quot;);</span><br><span class="line">System.out.println(list);</span><br><span class="line">list.add(&quot;f&quot;);</span><br><span class="line">System.out.println(list);</span><br><span class="line">输出：</span><br><span class="line">[a, b, c, d, e]</span><br><span class="line">Exception in thread &quot;main&quot; java.lang.UnsupportedOperationException</span><br><span class="line">....</span><br></pre></td></tr></table></figure></p>
-          <div class="post-more-link text-center">
+          <!--noindex-->
+          <div class="post-button text-center">
             <a class="btn" href="/2017/02/22/java-util-Arrays-asList方法的小细节/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
+          <!--/noindex-->
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
+
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -995,6 +1348,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -1002,13 +1359,27 @@
       
 
   
-  
 
   
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://doublekill.me/2017/02/17/快速排序/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="tyzhz">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://ogh0ft7cp.bkt.clouddn.com/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="DOUBLE'KILL">
+    </span>
 
     
       <header class="post-header">
@@ -1016,38 +1387,42 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/2017/02/17/快速排序/" itemprop="url">
-                  快速排序
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2017/02/17/快速排序/" itemprop="url">快速排序</a></h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2017-02-17T14:54:12+08:00" content="2017-02-17">
-              2017-02-17
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-02-17T14:54:12+08:00">
+                2017-02-17
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/算法/" itemprop="url" rel="index">
                     <span itemprop="name">算法</span>
                   </a>
@@ -1055,33 +1430,61 @@
 
                 
                 
-
               
             </span>
           
 
           
             
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2017/02/17/快速排序/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/02/17/快速排序/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
           
 
           
           
 
           
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  
+                </span>
+              
+            </div>
+          
+
+          
+
         </div>
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -1091,24 +1494,29 @@
         
           <h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><p>快速排序（英语：Quicksort），又称划分交换排序（partition-exchange sort），一种排序算法，最早由东尼·霍尔提出。在平均状况下，排序n个项目要Ο(n log n)次比较。在最坏状况下则需要Ο(n2)次比较，但这种状况并不常见。事实上，快速排序通常明显比其他Ο(n log n)算法更快，因为它的内部循环（inner loop）可以在大部分的架构上很有效率地被实现出来。</p>
 <h2 id="算法思路"><a href="#算法思路" class="headerlink" title="算法思路"></a>算法思路</h2><p>1.选定一个合适的值（理想情况中值最好，但实现中一般使用数组第一个值）,称为“枢轴”(pivot)。<br>2.重新排序数列，所有元素比基准值小的摆放在基准前面，所有元素比基准值大的摆在基准的后面（相同的数可以到任一边）。在这个分区结束之后，该基准就处于数列的中间位置。这个称为分区（partition）操作。<br>3.递归地（recursive）把小于基准值元素的子数列和大于基准值元素的子数列排序。</p>
-          <div class="post-more-link text-center">
+          <!--noindex-->
+          <div class="post-button text-center">
             <a class="btn" href="/2017/02/17/快速排序/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
+          <!--/noindex-->
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
+
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -1118,6 +1526,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -1125,13 +1537,27 @@
       
 
   
-  
 
   
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://doublekill.me/2016/11/10/Intellij-IDEA-Lambda提示-Can-be-replaced-with-method-reference/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="tyzhz">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://ogh0ft7cp.bkt.clouddn.com/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="DOUBLE'KILL">
+    </span>
 
     
       <header class="post-header">
@@ -1139,38 +1565,42 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/2016/11/10/Intellij-IDEA-Lambda提示-Can-be-replaced-with-method-reference/" itemprop="url">
-                  Intellij IDEA Lambda提示 Can be replaced with method reference
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2016/11/10/Intellij-IDEA-Lambda提示-Can-be-replaced-with-method-reference/" itemprop="url">Intellij IDEA Lambda提示 Can be replaced with method reference</a></h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-11-10T14:12:53+08:00" content="2016-11-10">
-              2016-11-10
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-11-10T14:12:53+08:00">
+                2016-11-10
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/开发工具/" itemprop="url" rel="index">
                     <span itemprop="name">开发工具</span>
                   </a>
@@ -1178,33 +1608,61 @@
 
                 
                 
-
               
             </span>
           
 
           
             
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/11/10/Intellij-IDEA-Lambda提示-Can-be-replaced-with-method-reference/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/10/Intellij-IDEA-Lambda提示-Can-be-replaced-with-method-reference/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
           
 
           
           
 
           
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  
+                </span>
+              
+            </div>
+          
+
+          
+
         </div>
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -1240,24 +1698,29 @@
 </tr>
 </tbody>
 </table>
-          <div class="post-more-link text-center">
+          <!--noindex-->
+          <div class="post-button text-center">
             <a class="btn" href="/2016/11/10/Intellij-IDEA-Lambda提示-Can-be-replaced-with-method-reference/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
+          <!--/noindex-->
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
+
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -1267,6 +1730,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -1274,13 +1741,27 @@
       
 
   
-  
 
   
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://doublekill.me/2016/11/04/java8新特性/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="tyzhz">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://ogh0ft7cp.bkt.clouddn.com/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="DOUBLE'KILL">
+    </span>
 
     
       <header class="post-header">
@@ -1288,38 +1769,42 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/2016/11/04/java8新特性/" itemprop="url">
-                  java8新特性
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2016/11/04/java8新特性/" itemprop="url">java8新特性</a></h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-11-04T14:00:08+08:00" content="2016-11-04">
-              2016-11-04
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-11-04T14:00:08+08:00">
+                2016-11-04
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/java/" itemprop="url" rel="index">
                     <span itemprop="name">java</span>
                   </a>
@@ -1327,33 +1812,61 @@
 
                 
                 
-
               
             </span>
           
 
           
             
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/11/04/java8新特性/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/04/java8新特性/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
           
 
           
           
 
           
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  
+                </span>
+              
+            </div>
+          
+
+          
+
         </div>
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -1364,24 +1877,29 @@
           <h2 id="接口的默认方法和静态方法"><a href="#接口的默认方法和静态方法" class="headerlink" title="接口的默认方法和静态方法"></a>接口的默认方法和静态方法</h2><p>在接口中定义默认方法和静态方法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">public interface DefaultInterface&#123;</span><br><span class="line"></span><br><span class="line">    default void defaultFun()&#123;</span><br><span class="line">        System.out.println(&quot;default function!&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">    static void staticFun()&#123;</span><br><span class="line">        System.out.println(&quot;static function!&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>特点：<br><strong><br>1.这两种方法的定义必须要有具体实现。<br>2.默认方法可以被实现类直接使用，也可以被实现类重写。<br>3.静态方法只能通过接口名调用。
 </strong><br>
-          <div class="post-more-link text-center">
+          <!--noindex-->
+          <div class="post-button text-center">
             <a class="btn" href="/2016/11/04/java8新特性/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
+          <!--/noindex-->
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
+
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -1391,6 +1909,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -1398,13 +1920,27 @@
       
 
   
-  
 
   
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://doublekill.me/2016/11/02/IntelliJ-IDEA常用插件/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="tyzhz">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://ogh0ft7cp.bkt.clouddn.com/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="DOUBLE'KILL">
+    </span>
 
     
       <header class="post-header">
@@ -1412,38 +1948,42 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/2016/11/02/IntelliJ-IDEA常用插件/" itemprop="url">
-                  IntelliJ IDEA常用插件
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2016/11/02/IntelliJ-IDEA常用插件/" itemprop="url">IntelliJ IDEA常用插件</a></h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-11-02T11:29:32+08:00" content="2016-11-02">
-              2016-11-02
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-11-02T11:29:32+08:00">
+                2016-11-02
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/开发工具/" itemprop="url" rel="index">
                     <span itemprop="name">开发工具</span>
                   </a>
@@ -1451,33 +1991,61 @@
 
                 
                 
-
               
             </span>
           
 
           
             
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/11/02/IntelliJ-IDEA常用插件/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/02/IntelliJ-IDEA常用插件/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
           
 
           
           
 
           
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  
+                </span>
+              
+            </div>
+          
+
+          
+
         </div>
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -1487,24 +2055,29 @@
         
           <h4 id="AceJump"><a href="#AceJump" class="headerlink" title="AceJump"></a>AceJump</h4><p>快速将光标跳转到编辑器可见的任何位置，使用快捷键<code>ctrl+;</code>打开AceJump模式,然后输入你想要<br>光标跳转的字符，这个时候当前屏幕中所有该字符都会被打上一个字母标记，然后你只需要输入标记<br>的字符，光标就可以跳转到这个字符上了。非常好用的一款插件.</p>
 <h4 id="codeGlance"><a href="#codeGlance" class="headerlink" title="codeGlance"></a>codeGlance</h4><p>在编辑器窗格中嵌入缩略图，可以快速定位代码.</p>
-          <div class="post-more-link text-center">
+          <!--noindex-->
+          <div class="post-button text-center">
             <a class="btn" href="/2016/11/02/IntelliJ-IDEA常用插件/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
+          <!--/noindex-->
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
+
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -1514,6 +2087,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -1546,120 +2123,123 @@
   </div>
 
   <aside id="sidebar" class="sidebar">
+    
+      <div id="sidebar-dimmer"></div>
+    
     <div class="sidebar-inner">
 
       
 
       
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
-          <img class="site-author-image" itemprop="image"
-               src="http://ogh0ft7cp.bkt.clouddn.com/avatar.png"
-               alt="tyzhz" />
-          <p class="site-author-name" itemprop="name">tyzhz</p>
-          <p class="site-description motion-element" itemprop="description">我很孤独用英文怎么讲，I LOVE YOU.</p>
-        </div>
-        <nav class="site-state motion-element">
-          <div class="site-state-item site-state-posts">
-            <a href="/archives">
-              <span class="site-state-item-count">19</span>
-              <span class="site-state-item-name">日志</span>
-            </a>
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="http://ogh0ft7cp.bkt.clouddn.com/avatar.png"
+                alt="tyzhz" />
+            
+              <p class="site-author-name" itemprop="name">tyzhz</p>
+              <p class="site-description motion-element" itemprop="description">我很孤独用英文怎么讲，I LOVE YOU.</p>
           </div>
 
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">19</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">25</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
           
-            <div class="site-state-item site-state-categories">
-              <a href="/categories">
-                <span class="site-state-item-count">9</span>
-                <span class="site-state-item-name">分类</span>
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
               </a>
             </div>
           
 
           
-            <div class="site-state-item site-state-tags">
-              <a href="/tags">
-                <span class="site-state-item-count">25</span>
-                <span class="site-state-item-name">标签</span>
-              </a>
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/wangjunling" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://weibo.com/u/2325342333" target="_blank" title="Weibo">
+                      
+                        <i class="fa fa-fw fa-weibo"></i>Weibo</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.zhihu.com/people/one-sheldon" target="_blank" title="Zhihu">
+                      
+                        <i class="fa fa-fw fa-globe"></i>Zhihu</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://music.163.com/#/user/home?id=83959138" target="_blank" title="NetEase">
+                      
+                        <i class="fa fa-fw fa-music"></i>NetEase</a>
+                  </span>
+                
             </div>
           
 
-        </nav>
-
-        
-          <div class="feed-link motion-element">
-            <a href="/atom.xml" rel="alternate">
-              <i class="fa fa-rss"></i>
-              RSS
-            </a>
-          </div>
-        
-
-        <div class="links-of-author motion-element">
           
-            
-              <span class="links-of-author-item">
-                <a href="https://github.com/wangjunling" target="_blank" title="GitHub">
-                  
-                    <i class="fa fa-fw fa-github"></i>
-                  
-                  GitHub
-                </a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="http://weibo.com/u/2325342333" target="_blank" title="Weibo">
-                  
-                    <i class="fa fa-fw fa-weibo"></i>
-                  
-                  Weibo
-                </a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="https://www.zhihu.com/people/one-sheldon" target="_blank" title="Zhihu">
-                  
-                    <i class="fa fa-fw fa-globe"></i>
-                  
-                  Zhihu
-                </a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="http://music.163.com/#/user/home?id=83959138" target="_blank" title="NetEase">
-                  
-                    <i class="fa fa-fw fa-music"></i>
-                  
-                  NetEase
-                </a>
-              </span>
-            
           
+
+          
+          
+
+          
+
         </div>
-
-        
-        
-
-        
-        
-          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
-            <div class="links-of-blogroll-title">
-              <i class="fa  fa-fw fa-globe"></i>
-              Links
-            </div>
-            <ul class="links-of-blogroll-list">
-              
-                <li class="links-of-blogroll-item">
-                  <a href="http://www.lonlone.xyz/" title="lonlone" target="_blank">lonlone</a>
-                </li>
-              
-            </ul>
-          </div>
-        
       </section>
 
+      
+
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
       
 
     </div>
@@ -1672,37 +2252,48 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright" >
-  
-  &copy;  2016 - 
-  <span itemprop="copyrightYear">2018</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
-    <i class="fa fa-heart"></i>
+    <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">tyzhz</span>
-</div>
-<div class="powered-by">
-DOUBLE'KILL
+
+  
 </div>
 
-<div class="theme-info">
-程序员
-</div>
+
+
+
+
+
+
+
+
         
-
 <div class="busuanzi-count">
-
   <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
   
-    <span class="site-uv"><i class="fa fa-user"></i><span class="busuanzi-value" id="busuanzi_value_site_uv"></span></span>
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
   
 
   
-    <span class="site-pv"><i class="fa fa-eye"></i><span class="busuanzi-value" id="busuanzi_value_site_pv"></span></span>
-  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
   
 </div>
+
+
+
+
+
 
 
 
@@ -1710,9 +2301,10 @@ DOUBLE'KILL
       </div>
     </footer>
 
-    <div class="back-to-top">
-      <i class="fa fa-arrow-up"></i>
-    </div>
+    
+
+    
+
   </div>
 
   
@@ -1735,86 +2327,119 @@ DOUBLE'KILL
 
 
 
-  
-  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
-
-  
-  <script type="text/javascript" src="//cdn.jsdelivr.net/fastclick/1.0.6/fastclick.min.js"></script>
-
-  
-  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.lazyload/1.9.3/jquery.lazyload.min.js"></script>
-
-  
-  <script type="text/javascript" src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js"></script>
-
-  
-  <script type="text/javascript" src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.ui.min.js"></script>
-
-  
-  <script type="text/javascript" src="//cdn.jsdelivr.net/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
 
 
-  
-
-<!--  -->
- <!-- <script type="text/javascript" src="/js/js/src/utils.js?v=5.0.2"></script> -->
- <!--  -->
- <!-- <script type="text/javascript" src="/js/js/src/motion.js?v=5.0.2"></script> -->
- <!--  -->
-
-  <script type="text/javascript" src="http://ogh0ft7cp.bkt.clouddn.com/js/src/utils.js?v=5.0.2"></script>
-
-  <script type="text/javascript" src="http://ogh0ft7cp.bkt.clouddn.com/js/src/motion.js?v=5.0.2"></script>
 
 
-  
-  
 
-<!--  -->
-<!--   <script type="text/javascript" src="/js/src/affix.js?v=5.0.2"></script> -->
-<!--  -->
-<!--   <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.2"></script> -->
-<!--  -->
 
-  <script type="text/javascript" src="http://ogh0ft7cp.bkt.clouddn.com/js/src/affix.js?v=5.0.2"></script>
-
-  <script type="text/javascript" src="http://ogh0ft7cp.bkt.clouddn.com/js/src/schemes/pisces.js?v=5.0.2"></script>
 
 
 
   
-
   
-
-<!--  -->
-  <!-- <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.2"></script> -->
-<!--  -->
- 
-   <script type="text/javascript" src="http://ogh0ft7cp.bkt.clouddn.com/js/src/bootstrap.js?v=5.0.2"></script>
- 
-
-
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
   
 
   
+  
+    <script type="text/javascript" src="//cdn.jsdelivr.net/fastclick/1.0.6/fastclick.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.lazyload/1.9.3/jquery.lazyload.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.ui.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="//cdn.jsdelivr.net/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+<!-- LOCAL: You can save these files to your site and update links -->
     
-  
+        
+        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
+    
+<!-- END LOCAL -->
 
- <!-- <script type="text/javascript">
-    var duoshuoQuery = {short_name:"wmblog2016"};
-    (function() {
-      var ds = document.createElement('script');
-      ds.type = 'text/javascript';ds.async = true;
-      ds.id = 'duoshuo-script';
-      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-      ds.charset = 'UTF-8';
-      (document.getElementsByTagName('head')[0]
-      || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
-  </script>
-  -->
+    
+      <style>
+        a.gitment-editor-footer-tip { display: none; }
+        .gitment-container.gitment-footer-container { display: none; }
+      </style>
+    
 
-  
+    
+
 
 
 
@@ -1822,135 +2447,327 @@ DOUBLE'KILL
 
 
   
-  
+
   <script type="text/javascript">
     // Popup Window;
     var isfetched = false;
+    var isXml = true;
     // Search DB path;
     var search_path = "search.xml";
-    if (search_path.length == 0) {
-       search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
     }
     var path = "/" + search_path;
     // monitor main search box;
 
-    function proceedsearch() {
-      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
-      $('.popup').toggle();
-
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
     }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
     // search function;
     var searchFunc = function(path, search_id, content_id) {
-    'use strict';
-    $.ajax({
-        url: path,
-        dataType: "xml",
-        async: true,
-        success: function( xmlResponse ) {
-            // get the contents from search data
-            isfetched = true;
-            $('.popup').detach().appendTo('.header-inner');
-            var datas = $( "entry", xmlResponse ).map(function() {
-                return {
-                    title: $( "title", this ).text(),
-                    content: $("content",this).text(),
-                    url: $( "url" , this).text()
-                };
-            }).get();
-            var $input = document.getElementById(search_id);
-            var $resultContent = document.getElementById(content_id);
-            $input.addEventListener('input', function(){
-                var matchcounts = 0;
-                var str='<ul class=\"search-result-list\">';
-                var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
-                $resultContent.innerHTML = "";
-                if (this.value.trim().length > 1) {
-                // perform local searching
-                datas.forEach(function(data) {
-                    var isMatch = false;
-                    var content_index = [];
-                    var data_title = data.title.trim().toLowerCase();
-                    var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
-                    var data_url = data.url;
-                    var index_title = -1;
-                    var index_content = -1;
-                    var first_occur = -1;
-                    // only match artiles with not empty titles and contents
-                    if(data_title != '') {
-                        keywords.forEach(function(keyword, i) {
-                            index_title = data_title.indexOf(keyword);
-                            index_content = data_content.indexOf(keyword);
-                            if( index_title >= 0 || index_content >= 0 ){
-                                isMatch = true;
-								if (i == 0) {
-                                    first_occur = index_content;
-                                }
-                            } 
-							
-                        });
-                    }
-                    // show search results
-                    if (isMatch) {
-                        matchcounts += 1;
-                        str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
-                        var content = data.content.trim().replace(/<[^>]+>/g,"");
-                        if (first_occur >= 0) {
-                            // cut out 100 characters
-                            var start = first_occur - 20;
-                            var end = first_occur + 80;
-                            if(start < 0){
-                                start = 0;
-                            }
-                            if(start == 0){
-                                end = 50;
-                            }
-                            if(end > content.length){
-                                end = content.length;
-                            }
-                            var match_content = content.substring(start, end);
-                            // highlight all keywords
-                            keywords.forEach(function(keyword){
-                                var regS = new RegExp(keyword, "gi");
-                                match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
-                            });
+      'use strict';
 
-                            str += "<p class=\"search-result\">" + match_content +"...</p>"
-                        }
-                        str += "</li>";
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
                     }
-                })};
-                str += "</ul>";
-                if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
-                if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
-                $resultContent.innerHTML = str;
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
             });
-            proceedsearch();
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
         }
-    });}
+      });
+    }
 
     // handle and trigger popup window;
     $('.popup-trigger').click(function(e) {
       e.stopPropagation();
-      if (isfetched == false) {
+      if (isfetched === false) {
         searchFunc(path, 'local-search-input', 'local-search-result');
       } else {
         proceedsearch();
       };
-
     });
 
-    $('.popup-btn-close').click(function(e){
-      $('.popup').hide();
-      $(".popoverlay").remove();
-      $('body').css('overflow', '');
-    });
+    $('.popup-btn-close').click(onPopupClose);
     $('.popup').click(function(e){
       e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
     });
   </script>
 
 
-  
+
+
 
   
 
@@ -1958,6 +2775,42 @@ DOUBLE'KILL
 
   
 
+  
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+      pbOptions = {};
+      
+          pbOptions.iconStyle = "box";
+      
+          pbOptions.boxForm = "horizontal";
+      
+          pbOptions.position = "bottomCenter";
+      
+          pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+  </script>
+
+  
+
+  
+
+  
+  <script type="text/javascript" src="/js/src/js.cookie.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/js/src/scroll-cookie.js?v=5.1.4"></script>
+
+
+  
 
 </body>
 </html>
