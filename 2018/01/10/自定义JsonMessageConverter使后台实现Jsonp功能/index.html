@@ -72,7 +72,7 @@
 <link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="jquery动态绑定事件" />
+  <meta name="keywords" content="fastjson,jsonp," />
 
 
 
@@ -90,18 +90,18 @@
 
 
 
-<meta name="description" content="例如在下面div中,我们想给input绑定点击事件，但是这个input是后续动态加进去的，比如是异步加载过来的，所以我们如果直接用 $(“#test input:first”).click();jquery是找不到这个input的。  1&amp;lt;div id=&amp;quot;test&amp;quot;&amp;gt;&amp;lt;input type=&amp;quot;button&amp;quot; value=&amp;quot;提交&amp;">
-<meta name="keywords" content="jquery动态绑定事件">
+<meta name="description" content="Jsonp需要返回什么格式的数据当前端需要跨域调用后台数据的时候，除了在后台配置Access-Control-Allow-Origin，还可以用jsonp实现使用jsonp方式调用后台时，后台会接受一个callback参数，然后返回的时候，只需将返回的结果和callback组装成一个函数调用就可以了例如：callback(resultJson)">
+<meta name="keywords" content="fastjson,jsonp">
 <meta property="og:type" content="article">
-<meta property="og:title" content="jquery动态绑定事件">
-<meta property="og:url" content="http://doublekill.me/2016/10/20/jquery动态绑定事件/index.html">
+<meta property="og:title" content="自定义JsonMessageConverter使后台实现Jsonp功能">
+<meta property="og:url" content="http://doublekill.me/2018/01/10/自定义JsonMessageConverter使后台实现Jsonp功能/index.html">
 <meta property="og:site_name" content="DOUBLE&#39;KILL">
-<meta property="og:description" content="例如在下面div中,我们想给input绑定点击事件，但是这个input是后续动态加进去的，比如是异步加载过来的，所以我们如果直接用 $(“#test input:first”).click();jquery是找不到这个input的。  1&amp;lt;div id=&amp;quot;test&amp;quot;&amp;gt;&amp;lt;input type=&amp;quot;button&amp;quot; value=&amp;quot;提交&amp;">
+<meta property="og:description" content="Jsonp需要返回什么格式的数据当前端需要跨域调用后台数据的时候，除了在后台配置Access-Control-Allow-Origin，还可以用jsonp实现使用jsonp方式调用后台时，后台会接受一个callback参数，然后返回的时候，只需将返回的结果和callback组装成一个函数调用就可以了例如：callback(resultJson)">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2016-11-10T10:37:30.000Z">
+<meta property="og:updated_time" content="2018-01-10T03:26:01.422Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="jquery动态绑定事件">
-<meta name="twitter:description" content="例如在下面div中,我们想给input绑定点击事件，但是这个input是后续动态加进去的，比如是异步加载过来的，所以我们如果直接用 $(“#test input:first”).click();jquery是找不到这个input的。  1&amp;lt;div id=&amp;quot;test&amp;quot;&amp;gt;&amp;lt;input type=&amp;quot;button&amp;quot; value=&amp;quot;提交&amp;">
+<meta name="twitter:title" content="自定义JsonMessageConverter使后台实现Jsonp功能">
+<meta name="twitter:description" content="Jsonp需要返回什么格式的数据当前端需要跨域调用后台数据的时候，除了在后台配置Access-Control-Allow-Origin，还可以用jsonp实现使用jsonp方式调用后台时，后台会接受一个callback参数，然后返回的时候，只需将返回的结果和callback组装成一个函数调用就可以了例如：callback(resultJson)">
 
 
 
@@ -122,10 +122,10 @@
 
 
 
-  <link rel="canonical" href="http://doublekill.me/2016/10/20/jquery动态绑定事件/"/>
+  <link rel="canonical" href="http://doublekill.me/2018/01/10/自定义JsonMessageConverter使后台实现Jsonp功能/"/>
 
 
-  <title> jquery动态绑定事件 | DOUBLE'KILL </title>
+  <title> 自定义JsonMessageConverter使后台实现Jsonp功能 | DOUBLE'KILL </title>
 </head>
 
 <body itemscope itemtype="//schema.org/WebPage" lang="zh-Hans">
@@ -287,7 +287,7 @@
             
             
               
-                jquery动态绑定事件
+                自定义JsonMessageConverter使后台实现Jsonp功能
               
             
           </h1>
@@ -299,8 +299,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-10-20T11:26:14+08:00" content="2016-10-20">
-              2016-10-20
+            <time itemprop="dateCreated" datetime="2018-01-10T10:57:59+08:00" content="2018-01-10">
+              2018-01-10
             </time>
           </span>
 
@@ -313,8 +313,8 @@
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/js/" itemprop="url" rel="index">
-                    <span itemprop="name">js</span>
+                  <a href="/categories/java/" itemprop="url" rel="index">
+                    <span itemprop="name">java</span>
                   </a>
                 </span>
 
@@ -329,8 +329,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/10/20/jquery动态绑定事件/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/20/jquery动态绑定事件/" itemprop="commentsCount"></span>
+                <a href="/2018/01/10/自定义JsonMessageConverter使后台实现Jsonp功能/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2018/01/10/自定义JsonMessageConverter使后台实现Jsonp功能/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -358,19 +358,9 @@
       
 
       
-        <ul>
-<li>例如在下面div中,我们想给input绑定点击事件，但是这个input是后续动态加进去的，比如是异步加载过来的，所以我们如果直接用 $(“#test input:first”).click();jquery是找不到这个input的。</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id=&quot;test&quot;&gt;&lt;input type=&quot;button&quot; value=&quot;提交&quot; /&gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure>
-<ul>
-<li>所以我们可以用on方法<a id="more"></a>
-</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$(&quot;#test&quot;).on(&quot;click&quot;,&quot;input:first&quot;,function()&#123;</span><br><span class="line">    console.log(&apos;点击&apos;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>on() 方法在被选元素及子元素上添加一个或多个事件处理程序。<br>自 jQuery 版本 1.7 起，on() 方法是 bind()、live() 和 delegate() 方法的新的替代品。该方法给 API 带来很多便利，我们推荐使用该方法，它简化了 jQuery 代码库。<br><strong>注意</strong>：使用 on() 方法添加的事件处理程序适用于当前及未来的元素（比如由脚本创建的新元素）。<br><strong>提示</strong>：如需移除事件处理程序，请使用 off() 方法。<br><strong>提示</strong>：如需添加只运行一次的事件然后移除，请使用 one() 方法。</p>
-<p><em>事件冒泡：在一个对象上触发某类事件（比如单击onclick事件），如果此对象定义了此事件的处理程序，那么此事件就会调用这个处理程序，如果没有定义此事件处理程序或者事件返回true，那么这个事件会向这个对象的父级对象传播，从里到外，直至它被处理（父级对象所有同类事件都将被激活），或者它到达了对象层次的最顶层，即document对象（有些浏览器是window）。</em></p>
-</blockquote>
+        <h3 id="Jsonp需要返回什么格式的数据"><a href="#Jsonp需要返回什么格式的数据" class="headerlink" title="Jsonp需要返回什么格式的数据"></a>Jsonp需要返回什么格式的数据</h3><p>当前端需要跨域调用后台数据的时候，除了在后台配置Access-Control-Allow-Origin，还可以用jsonp实现<br>使用jsonp方式调用后台时，后台会接受一个callback参数，然后返回的时候，只需将返回的结果和callback组装成一个函数调用就可以了<br>例如：<br><code>callback(resultJson)</code><br><a id="more"></a></p>
+<h3 id="自定义JsonMessageConverter"><a href="#自定义JsonMessageConverter" class="headerlink" title="自定义JsonMessageConverter"></a>自定义JsonMessageConverter</h3><p>这里我使用的是fastjson,此时用到了RequestContext，封装request和response的对象，参考：<a href="http://doublekill.me/2018/01/10/%E5%B0%81%E8%A3%85request-response%E4%BD%BF%E4%B9%8B%E5%8F%AF%E4%BB%A5%E5%85%A8%E5%B1%80%E8%AE%BF%E9%97%AE/">封装request,response使之可以全局访问</a><br>代码如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line">public class JsonMessageConverter extends FastJsonHttpMessageConverter &#123;</span><br><span class="line"></span><br><span class="line">    private static final Logger logger              = LoggerFactory.getLogger(JsonMessageConverter.class);</span><br><span class="line">    private static String CALLBACK_REGEXP     = &quot;[^0-9a-zA-Z_\\.]&quot;;</span><br><span class="line">    private static       int         CALLBACK_MAX_LENGTH = 128;</span><br><span class="line">    private static Pattern PATTERN             = Pattern.compile(CALLBACK_REGEXP);</span><br><span class="line">    private static String CHAR_SET            = &quot;UTF-8&quot;;</span><br><span class="line">  </span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    protected void writeInternal(Object obj, HttpOutputMessage outputMessage) throws IOException, HttpMessageNotWritableException &#123;</span><br><span class="line"></span><br><span class="line">        OutputStream out = outputMessage.getBody();</span><br><span class="line">        String text;</span><br><span class="line"></span><br><span class="line">        String callback = RequestContext.getStr(&quot;callback&quot;);</span><br><span class="line">        RequestContext.getResponse().setCharacterEncoding(CHAR_SET);</span><br><span class="line">        RequestContext.getResponse().setHeader(&quot;Cache-Control&quot;, &quot;no-cache&quot;);</span><br><span class="line"></span><br><span class="line">        if (StringUtils.isNotBlank(callback)) &#123;</span><br><span class="line">            callback = StringEscapeUtils.escapeHtml4(callbackFilter(callback));</span><br><span class="line">            RequestContext.getResponse().setHeader(&quot;Content-Type&quot;, &quot;application/javascript&quot;);</span><br><span class="line">            text =  callback + &quot;(&quot; + getJson(obj) + &quot;);&quot;;</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            RequestContext.getResponse().setHeader(&quot;Content-Type&quot;, &quot;application/json&quot;);</span><br><span class="line">            text =  getJson(obj);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        byte[] bytes = text.getBytes(getCharset());</span><br><span class="line">        out.write(bytes);</span><br><span class="line">    &#125;</span><br><span class="line">     private String getJson(Object obj) &#123;</span><br><span class="line">        return JSON.toJSONString(obj, getFeatures());</span><br><span class="line">    &#125;</span><br><span class="line">     public static String callbackFilter(String callback) &#123;</span><br><span class="line">        if (StringUtils.isEmpty(callback)) &#123;</span><br><span class="line">            return StringUtils.EMPTY;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        String filterCallback = callback;</span><br><span class="line"></span><br><span class="line">        if (StringUtils.length(filterCallback) &gt; CALLBACK_MAX_LENGTH) &#123;</span><br><span class="line">            filterCallback = filterCallback.substring(0, CALLBACK_MAX_LENGTH);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        Matcher m = PATTERN.matcher(filterCallback);</span><br><span class="line"></span><br><span class="line">        filterCallback = m.replaceAll(&quot;&quot;);</span><br><span class="line"></span><br><span class="line">        if (!StringUtils.equals(callback, filterCallback)) &#123;</span><br><span class="line">            logger.error(&quot;callback was filter, callback:&quot; + callback + &quot;,filterCallcack:&quot; + filterCallback);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        return filterCallback;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>此时就已经支持jsonp了，而且对代码没有任何入侵。</p>
 
       
     </div>
@@ -414,7 +404,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/jquery/" rel="tag">#jquery</a>
+            <a href="/tags/fastjson/" rel="tag">#fastjson</a>
+          
+            <a href="/tags/jsonp/" rel="tag">#jsonp</a>
           
         </div>
       
@@ -423,17 +415,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/10/19/linux部署项目常用命令/" rel="next" title="linux部署项目常用命令">
-                <i class="fa fa-chevron-left"></i> linux部署项目常用命令
+              <a href="/2018/01/10/封装request-response使之可以全局访问/" rel="next" title="封装request,response使之可以全局访问">
+                <i class="fa fa-chevron-left"></i> 封装request,response使之可以全局访问
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/10/20/java-两个变量交换的两种方法/" rel="prev" title="java 两个变量交换的两种方法">
-                java 两个变量交换的两种方法 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -490,8 +478,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/10/20/jquery动态绑定事件/"
-           data-title="jquery动态绑定事件" data-url="http://doublekill.me/2016/10/20/jquery动态绑定事件/">
+      <div class="ds-thread" data-thread-key="2018/01/10/自定义JsonMessageConverter使后台实现Jsonp功能/"
+           data-title="自定义JsonMessageConverter使后台实现Jsonp功能" data-url="http://doublekill.me/2018/01/10/自定义JsonMessageConverter使后台实现Jsonp功能/">
       </div>
     
   </div>
@@ -640,7 +628,7 @@
               
             
             
-              <p class="post-toc-empty">此文章未包含目录</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Jsonp需要返回什么格式的数据"><span class="nav-number">1.</span> <span class="nav-text">Jsonp需要返回什么格式的数据</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义JsonMessageConverter"><span class="nav-number">2.</span> <span class="nav-text">自定义JsonMessageConverter</span></a></li></ol></div>
             
           </div>
         </section>
