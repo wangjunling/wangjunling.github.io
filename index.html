@@ -310,7 +310,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://doublekill.me/2018/03/05/maven打war包将资源文件打到classes中/">
+    <link itemprop="mainEntityOfPage" href="http://doublekill.me/2018/03/05/maven打war包/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="tyzhz">
@@ -329,7 +329,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/03/05/maven打war包将资源文件打到classes中/" itemprop="url">maven打war包将资源文件打到classes中</a></h1>
+                <a class="post-title-link" href="/2018/03/05/maven打war包/" itemprop="url">maven打war包</a></h1>
         
 
         <div class="post-meta">
@@ -436,7 +436,7 @@
           <h4 id="目的"><a href="#目的" class="headerlink" title="目的"></a>目的</h4><p>现在有一个maven项目，需要打成war包，但是需要把java代码打成jar包，将resources中的配置文件打到classes中，以遍在升级时随时修改，便于升级。maven配置：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;plugin&gt;</span><br><span class="line">    &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;maven-war-plugin&lt;/artifactId&gt;</span><br><span class="line">    &lt;version&gt;2.5&lt;/version&gt;</span><br><span class="line">    &lt;configuration&gt;</span><br><span class="line">        &lt;warName&gt;$&#123;project.artifactId&#125;&lt;/warName&gt;</span><br><span class="line">        &lt;!--将类文件打成jar包--&gt;</span><br><span class="line">        &lt;archiveClasses&gt;true&lt;/archiveClasses&gt;</span><br><span class="line">        &lt;!--将资源文件打到classes目录下--&gt;</span><br><span class="line">        &lt;webResources&gt;</span><br><span class="line">            &lt;resource&gt;</span><br><span class="line">                &lt;directory&gt;src/main/resources&lt;/directory&gt;</span><br><span class="line">                &lt;targetPath&gt;WEB-INF/classes&lt;/targetPath&gt;</span><br><span class="line">                &lt;filtering&gt;true&lt;/filtering&gt;</span><br><span class="line">            &lt;/resource&gt;</span><br><span class="line">        &lt;/webResources&gt;</span><br><span class="line">    &lt;/configuration&gt;</span><br><span class="line">&lt;/plugin&gt;</span><br></pre></td></tr></table></figure></p>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2018/03/05/maven打war包将资源文件打到classes中/#more" rel="contents">
+            <a class="btn" href="/2018/03/05/maven打war包/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
