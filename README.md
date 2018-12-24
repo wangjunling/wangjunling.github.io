@@ -1,2 +1,2 @@
 ### 个人博客
-[DOUBLE'KILL](http://doublekill.me "个人博客")
+[BLOG](http://wangjunling.github.io "个人博客")
